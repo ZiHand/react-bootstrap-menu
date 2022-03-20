@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-bootstrap-menu/static/css/main.297101bf.css",
+    "main.js": "/react-bootstrap-menu/static/js/main.4815de0e.js",
+    "static/media/home.webp": "/react-bootstrap-menu/static/media/home.b2ba747e26dedd8fd0c8.webp",
+    "static/media/sheldon-liu.webp": "/react-bootstrap-menu/static/media/sheldon-liu.c6f8552d7aad586d2ffe.webp",
+    "index.html": "/react-bootstrap-menu/index.html",
+    "main.297101bf.css.map": "/react-bootstrap-menu/static/css/main.297101bf.css.map",
+    "main.4815de0e.js.map": "/react-bootstrap-menu/static/js/main.4815de0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.297101bf.css",
+    "static/js/main.4815de0e.js"
+  ]
+}
