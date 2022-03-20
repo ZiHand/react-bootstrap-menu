@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const MealCard = ({img_url, img_alt, text}) => 
 {
     return (
@@ -9,7 +10,7 @@ const MealCard = ({img_url, img_alt, text}) =>
                 <div className="card-body">
                     <p className="card-text">{text}</p>
                     <div className="btn-group">
-                        <button type="button" className="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#myModal">Decouvrir</button>
+                        <button type="button" className="btn btn-sm btn-outline-secondary">Decouvrir</button>
                     </div>
                 </div>
             </div>

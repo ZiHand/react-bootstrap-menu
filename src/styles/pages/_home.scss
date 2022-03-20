@@ -10,3 +10,21 @@
 {
   background-color: rgba(0, 0, 0, 0.685);
 }
+
+.modal_div
+{
+  //z-index: 1;
+
+  .modal_container
+  {
+    //min-width: 800px;
+
+    .modal_picture
+    {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
