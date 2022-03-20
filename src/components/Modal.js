@@ -22,9 +22,9 @@ const Modal = () =>
         {modalState && (
         <div className="modal_div position-fixed top-0 vw-100 vh-100" >
             {/* Overlay */}
-            <div className="w-100 h-100 bg-dark bg-opacity-15" onClick={() => closeModal()}>
+            <div className="w-100 h-100 bg-dark " onClick={() => closeModal()}>
                 {/* The modal container*/}
-                <div className="modal_container position-absolute top-50 start-50 translate-middle" style={{ minWidth: "400px" }}>
+                <div className="modal_container position-absolute top-50 start-50 translate-middle" style={{ minWidth: "300px" }}>
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">

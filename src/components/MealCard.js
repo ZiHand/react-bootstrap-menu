@@ -16,7 +16,7 @@ const MealCard = (meal) =>
         <>
         <div className="col-md-4 col-sm-6">
             <div className="card mb-4 shadow-sm">
-                <img src={picture} alt={alt} className="w-100 rounded"/>
+                <img src={picture} alt={alt} className="w-100 rounded" onClick={() => openModal()}/>
                 <div className="card-body">
                     <h2 className="display-6 text-center">{title}</h2>
                     <p className="card-text">{text}</p>
