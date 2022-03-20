@@ -1,55 +1,8 @@
 import React from 'react';
 import MealCard from './../components/MealCard';
+import {meals} from '../mealDatas';
+import Modal from './../components/Modal';
 
-let meals = 
-[
-    {
-        picture: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
-        alt: "detail du plat",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nam id unde minus nihil, necessitatibus veniam soluta quos obcaecati sapiente!"
-    },
-    {
-        picture: "https://images.unsplash.com/photo-1607301405418-780ee5e6dd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80",
-        alt: "detail du plat",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nam id unde minus nihil, necessitatibus veniam soluta quos obcaecati sapiente!"
-    },
-    {
-        picture: "https://images.unsplash.com/photo-1607301405418-780ee5e6dd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80",
-        alt: "detail du plat",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nam id unde minus nihil, necessitatibus veniam soluta quos obcaecati sapiente!"
-    },
-    {
-        picture: "https://images.unsplash.com/photo-1607301405418-780ee5e6dd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80",
-        alt: "detail du plat",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nam id unde minus nihil, necessitatibus veniam soluta quos obcaecati sapiente!"
-    },
-    {
-        picture: "https://images.unsplash.com/photo-1607301405418-780ee5e6dd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80",
-        alt: "detail du plat",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nam id unde minus nihil, necessitatibus veniam soluta quos obcaecati sapiente!"
-    },
-    {
-        picture: "https://images.unsplash.com/photo-1607301405418-780ee5e6dd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80",
-        alt: "detail du plat",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nam id unde minus nihil, necessitatibus veniam soluta quos obcaecati sapiente!"
-    },
-    {
-        picture: "https://images.unsplash.com/photo-1607301405418-780ee5e6dd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80",
-        alt: "detail du plat",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nam id unde minus nihil, necessitatibus veniam soluta quos obcaecati sapiente!"
-    },
-    {
-        picture: "https://images.unsplash.com/photo-1607301405418-780ee5e6dd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80",
-        alt: "detail du plat",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nam id unde minus nihil, necessitatibus veniam soluta quos obcaecati sapiente!"
-    },
-    {
-        picture: "https://images.unsplash.com/photo-1607301405418-780ee5e6dd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80",
-        alt: "detail du plat",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nam id unde minus nihil, necessitatibus veniam soluta quos obcaecati sapiente!"
-    },
-    
-  ];
 
 
 const Home = () => 
@@ -69,11 +22,12 @@ const Home = () =>
                 {
                     meals.map( (element, index) => 
                     {
-                        return <MealCard img_url={element.picture} img_alt={element.alt} text={element.text} key={index}/>
+                        return <MealCard element={element} key={index}/>
                     })
                 }
             </div>
         </div>
+        <Modal />
         </>
     );
 };
