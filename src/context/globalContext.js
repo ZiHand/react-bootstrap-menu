@@ -4,7 +4,7 @@ export const GlobalContext = createContext();
 
 export function GlobalContextProvider(props)
 {
-    const [modalState, setModalState] = useState(true);
+    const [modalState, setModalState] = useState(false);
     const [mealState, setMealState] = useState([]);
 
     const toggleModal = (modal, meal) =>

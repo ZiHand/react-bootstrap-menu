@@ -17,7 +17,7 @@ const Home = () =>
             </div>
         </section>
         <div className="container py-5 bg-dark">
-            <h2 className="display-6 text-light text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <h2 className="display-4 text-light text-center mb-5">La <span className='display-3'>Carte</span></h2>
             <div className="row ">
                 {
                     meals.map( (element, index) => 
